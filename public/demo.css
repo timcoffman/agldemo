@@ -1,0 +1,158 @@
+::placeholder  {
+  font-style: italic;
+  color: rgba(0,0,0,0.5);
+}
+::-webkit-input-placeholder  {
+  font-style: italic;
+  color: rgba(0,0,0,0.5);
+}
+:-moz-placeholder  {
+  font-style: italic;
+  color: rgba(0,0,0,0.5);
+}
+:-ms-input-placeholder {
+  font-style: italic;
+  color: rgba(0,0,0,0.5);
+}
+
+.feature-disabled {
+  position: relative ;
+  /*
+  border: dashed 2px red;
+  */
+}
+
+/*
+.feature-disabled:after {
+  content: "" ;
+  background: url(https://cdn.gomix.com/91dc9fca-bd1c-40d0-b9a8-7ba29bbf434e%2F1483658975_No-entry.png) top right;
+  background-repeat: no-repeat ;
+  background-size: 20px 20px ;
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  right:0;
+}
+*/
+
+img.dismiss {
+  height: 3em;
+  cursor: pointer;
+}
+
+img.handshake {
+  height: 3em;
+  cursor: pointer;
+}
+
+img.save {
+  height: 2em;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+span.value {
+  unicode-bidi: embed;
+  font-family: monospace ;
+  white-space: pre;
+}
+
+.info-boxes {
+  display: flex;
+  flex-direction: column ;
+  align-items: flex-start;
+}
+
+.info-box {
+  flex: 0 1 auto ;
+  margin: 0.25em ;
+
+  display: flex;
+  flex-direction: column ;
+  align-items: flex-start;
+}
+
+.info-box > * {
+  flex: 0 1 auto ;
+  margin: 2px 5px ;
+  
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+}
+
+.info-box > * > * {
+  flex: 0 1 auto ;
+  margin: 0 2px ;
+}
+
+.info-box {
+  border: solid 2px ;
+  border-radius: 5px ;
+  box-shadow: 2px 2px 4px ;
+
+  font-family: Tahoma;
+  font-size: 9pt;
+}
+
+.info-box > *:first-child {
+  font-size: 12pt;
+}
+
+.step {
+  border-color: #2848A6 ;
+  background-color: #B6C9FF ;
+  box-shadow: 2px 2px 4px #7588BF ;
+}
+
+.step .icon {
+  display: none ;
+}
+
+.step .icon img {
+  width: 32px;
+  height: 32px;
+  text-align: top;
+}  
+
+.step.init .icon.init,
+.step.pending .icon.pending,
+.step.complete .icon.complete,
+.step.incomplete .icon.incomplete {
+  display: flex ;
+}
+
+
+.step .detail {
+  border-top: dashed 1px #7588BF;
+}
+
+.step .detail ~ .detail {
+  border-top: none;
+}
+
+.param .icon img {
+  width: 24px;
+  height: 24px;
+  text-align: top;
+}  
+
+.param {
+  border-color: #248DA6 ;
+  background-color: #B0F0FF ;
+  box-shadow: 2px 2px 4px #6EB0BF ;
+}
+
+
+.state .icon img {
+  width: 24px;
+  height: 24px;
+  text-align: top;
+}  
+
+.state {
+  border-color: #961D00 ;
+  background-color: #F3876D ;
+  box-shadow: 2px 2px 4px #AD442B ;
+}

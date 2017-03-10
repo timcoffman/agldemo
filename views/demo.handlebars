@@ -1,0 +1,129 @@
+
+<div style="display: none" id="step-prototype">
+  
+  <div class="step info-box init">
+      <div>
+        <div class="icon init">
+          <img src="https://cdn.gomix.com/91dc9fca-bd1c-40d0-b9a8-7ba29bbf434e%2F1483583935_free-18.png" onclick="demoContinue()" >
+        </div>
+        <div class="icon complete">
+          <img src="https://cdn.gomix.com/91dc9fca-bd1c-40d0-b9a8-7ba29bbf434e%2F1483583905_free-05.png">
+        </div>
+        <div class="icon pending">
+          <img src="https://cdn.gomix.com/91dc9fca-bd1c-40d0-b9a8-7ba29bbf434e%2F1483583963_free-02.png">
+        </div>
+        <div class="icon incomplete">
+          <img src="https://cdn.gomix.com/91dc9fca-bd1c-40d0-b9a8-7ba29bbf434e%2F1483583930_free-09.png">
+        </div>
+        <div class="message">
+          unspecified
+        </div>      
+      </div>
+  </div>
+  
+</div>
+
+<div style="display: none" id="param-prototype">
+  
+  <div class="param info-box">
+      <div>
+        <div class="icon">
+          <img src="https://cdn.gomix.com/91dc9fca-bd1c-40d0-b9a8-7ba29bbf434e%2F1483589668_free-16.png">
+        </div>
+        <div>
+          <span class="name">
+            unspecified
+          </span>
+          <span>&rarr;</span>
+          <span class="value">
+            unspecified
+          </span>      
+        </div>
+      </div>
+  </div>
+
+</div>
+
+<div style="float: right">
+  <span class="feature-disabled feature-Epic\.Clinical\.Informatics\.Web\.CloseActivity">
+    <img class="dismiss feature-disabled feature-Epic\.Clinical\.Informatics\.Web\.CloseActivity" onclick="demoDone()" src="https://cdn.gomix.com/91dc9fca-bd1c-40d0-b9a8-7ba29bbf434e%2F1483588596_free-30.png">
+  </span>
+</div>
+
+<div style="float: right">
+  <span class="feature-disabled feature-Epic\.Clinical\.Informatics\.Web\.InitiateHandshake">
+    <img class="handshake" onclick="demoHandshake()" src="https://cdn.gomix.com/91dc9fca-bd1c-40d0-b9a8-7ba29bbf434e%2F1483583919_free-38.png">
+  </span>
+</div>
+
+<div class="states info-boxes">
+  
+<div>
+  
+  <div class="state info-box">
+      <div>
+        <div class="icon">
+          <img src="https://cdn.gomix.com/91dc9fca-bd1c-40d0-b9a8-7ba29bbf434e%2F1483590221_free-23.png">
+        </div>
+        <div class="name">
+          Save State: <input id="state" type="text" size="32" placeholder="state description" value="">
+        </div>
+      <div>
+        <span class="feature-disabled feature-Epic\.Clinical\.Informatics\.Web\.SaveState">
+          <img class="save" onclick="demoSave()" src="https://cdn.gomix.com/91dc9fca-bd1c-40d0-b9a8-7ba29bbf434e%2F1483602440_free-31.png">
+        </span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="state info-box">
+      <div>
+        <div class="icon">
+          <img src="https://cdn.gomix.com/91dc9fca-bd1c-40d0-b9a8-7ba29bbf434e%2F1483590221_free-23.png">
+        </div>
+        <div class="name">
+          Order Key: <input id="orderKey" type="text" size="8" placeholder="key" value="">
+        </div>
+      <div>
+        <span class="feature-disabled feature-Epic\.Clinical\.Informatics\.Web\.PostOrder">
+          <img class="save" onclick="demoOrder()" src="https://cdn.gomix.com/91dc9fca-bd1c-40d0-b9a8-7ba29bbf434e%2F1483602440_free-31.png">
+        </span>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+</div>
+
+<div class="params info-boxes" id="params">
+
+</div>
+
+<div class="params info-boxes" id="">
+  {{#each EpicQuery.search }}
+  <div class="param info-box">
+      <div>
+        <div class="icon">
+          <img src="https://cdn.gomix.com/91dc9fca-bd1c-40d0-b9a8-7ba29bbf434e%2F1483589668_free-16.png">
+        </div>
+        <div>
+          <span class="name">
+            {{@key}}
+          </span>
+          <span>&rarr;</span>
+          <span class="value">
+            {{toJSON this }}
+          </span>      
+        </div>
+      </div>
+  </div>
+
+  {{/each}}
+  
+</div>
+
+<div class="steps info-boxes" id="steps">
+
+</div>
+
